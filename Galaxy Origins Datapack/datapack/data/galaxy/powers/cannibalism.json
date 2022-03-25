@@ -1,0 +1,27 @@
+{
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": [
+            {
+                "item": "minecraft:cod"
+            },
+            {
+                "item": "minecraft:salmon"
+            },
+            {
+                "item": "minecraft:tropical_fish"
+            }
+        ]
+    },
+    "food_modifier": {
+        "operation": "addition",
+        "value": 6.0
+    },
+    "saturation_modifier": {
+        "operation": "addition",
+        "value": 9.6
+    },
+    "name": "Cannibalism",
+    "description": "You can eat other fish without cooking them."
+}

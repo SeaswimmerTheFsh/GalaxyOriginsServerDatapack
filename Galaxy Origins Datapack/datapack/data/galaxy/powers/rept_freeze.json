@@ -1,0 +1,58 @@
+{
+	"name": "Need for Warmth",
+	"description": "You need to find a heat source or you will freeze. Cold biomes and nighttimes are deadly unless you wear a leather chestplate.",
+	"type": "origins:freeze",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [{
+				"type": "origins:or",
+				"conditions": [{
+						"type": "origins:and",
+						"conditions": [{
+								"type": "origins:daytime",
+								"inverted": true
+							},
+							{
+								"type": "origins:equipped_item",
+								"equipment_slot": "chest",
+								"item_condition": {
+									"type": "origins:ingredient",
+									"ingredient": {
+										"item": "minecraft:leather_chestplate"
+									},
+									"inverted": true
+								}
+							}
+						]
+
+					},
+					{
+						"type": "origins:and",
+						"conditions": [{
+								"type": "origins:biome",
+								"condition": {
+									"type": "origins:temperature",
+									"comparison": "<=",
+									"compare_to": 0.3
+								}
+							},
+							{
+								"type": "origins:equipped_item",
+								"equipment_slot": "chest",
+								"item_condition": {
+									"type": "origins:ingredient",
+									"ingredient": {
+										"item": "minecraft:leather_chestplate"
+									},
+									"inverted": true
+								}
+							}
+						]
+
+					}
+				]
+			}
+
+		]
+	}
+}

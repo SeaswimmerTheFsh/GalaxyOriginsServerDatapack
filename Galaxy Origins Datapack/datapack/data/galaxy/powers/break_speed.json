@@ -1,0 +1,24 @@
+{
+    "name": "bs",
+    "description": "hm",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            {
+                "inverted": true,
+                "type": "origins:on_block"
+            }
+        ]
+    },
+    "type": "origins:modify_break_speed",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 4
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "name": "Gotta Go",
+    "description": "Hold your primary key to boost your speed and run really fast. As you hold your primary button your energy bar will slowly go down. You are also unable to jump while going",
+    "type": "origins:multiple",
+    "bar_main":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1000,
+        "start_value": 1000,
+        "hud_render":
+        {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 2
+        }
+    },
+    "bar_recharge_delay":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "start_value": 0,
+        "hud_render":
+        {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 20
+        }
+    },
+    "recharge":
+    {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action":
+        {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_bar_recharge_delay",
+                    "change": -1
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition":
+                    {
+                        "type": "origins:resource",
+                        "inverted": false,
+                        "comparison": "==",
+                        "resource": "*:*_bar_recharge_delay",
+                        "compare_to": 0
+                    },
+                    "if_action":
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_bar_main",
+                        "change": 2
+                    }
+                }
+            ],
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_eagle_eye",
+                "inverted": true
+            }
+        }
+    },
+    "activate":
+    {
+        "type": "origins:active_self",
+        "cooldown": 1,
+        "key":
+        {
+            "continuous": true,
+            "key": "key.origins.primary_active"
+        },
+        "hud_render":
+        {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 20
+        },
+        "entity_action":
+        {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_bar_recharge_delay",
+                    "change": 5
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition":
+                    {
+                        "type": "origins:resource",
+                        "inverted": false,
+                        "comparison": "!=",
+                        "resource": "*:*_bar_main",
+                        "compare_to": 0
+                    },
+                    "if_action":
+                    {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_bar_main",
+                                "change": -5
+                            },
+                            {
+                                "type": "origins:apply_effect",
+                                "effect":
+                                {
+                                    "duration": 2,
+                                    "amplifier": 3,
+                                    "is_ambient": false,
+                                    "show_particles": false,
+                                    "show_icon": false,
+                                    "effect": "speed"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "permission_level": 4,
+                                "command": "execute anchored feet run particle minecraft:cloud ~ ~ ~ 0.1 0 0.1 0 1"
+                            }, 
+                            {
+                                "type": "origins:apply_effect",
+                                "effect":
+                                {
+                                    "duration": 2,
+                                    "amplifier": 128,
+                                    "is_ambient": false,
+                                    "show_particles": false,
+                                    "show_icon": false,
+                                    "effect": "jump_boost"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

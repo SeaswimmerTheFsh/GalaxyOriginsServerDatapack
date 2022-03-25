@@ -1,0 +1,9 @@
+{
+	"type": "origins:modify_swim_speed",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": -0.50
+	},
+	"name": "Sluggish",
+	"description": "You have more trouble swimming in water than others, making your swim speed slower. (-50%)"
+}

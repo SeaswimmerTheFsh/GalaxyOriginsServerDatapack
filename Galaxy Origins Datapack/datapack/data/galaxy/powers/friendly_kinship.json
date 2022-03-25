@@ -1,0 +1,46 @@
+{
+    "name": "Friendly Kinship",
+    "description": "No insects attack you.",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+			{
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add insect"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join insect @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join insect @e[type=minecraft:spider]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join insect @e[type=minecraft:cave_spider]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join insect @e[type=minecraft:endermite]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join insect @e[type=minecraft:silverfish]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join insect @e[type=minecraft:bee]"
+            }
+        ]
+    }
+}

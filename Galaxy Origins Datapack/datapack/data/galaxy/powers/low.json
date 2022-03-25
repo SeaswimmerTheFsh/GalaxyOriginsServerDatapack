@@ -1,0 +1,57 @@
+{
+	"type": "origins:multiple",
+	"active": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 3,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"trigger": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_active",
+			"change": 2
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": true
+		}
+	},
+	"drain": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_active",
+			"change": -1
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_active",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"main": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:eye_height .67"
+		},
+		"falling_action": {
+			"type": "origins:execute_command",
+			"command": "scale reset pehkui:eye_height"
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_active",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"hidden": true
+}

@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"galaxy:rept_freeze",
+		"galaxy:rept_natarmor",
+		"origins:tailwind",
+		"galaxy:rept_size",
+		"origins:no_shield",
+		"origins:more_exhaustion",
+		"galaxy:rept_poison",
+		"galaxy:rept_immune"
+	],
+	"icon": "minecraft:green_dye",
+	"order": 10,
+	"impact": 2,
+	"name": "Reptilian",
+	"description": "Descendants of the dinosaurs, these cold bloded creatures have adapted to surviving in the dangerous world."
+}

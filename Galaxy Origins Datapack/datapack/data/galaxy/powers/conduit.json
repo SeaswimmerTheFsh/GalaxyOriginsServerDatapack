@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:conduit_power",
+            "duration": 4,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "interval": 1,
+    "name": "Way of the Sea",
+    "description": "As a fish, you can both see and breathe underwater."
+}

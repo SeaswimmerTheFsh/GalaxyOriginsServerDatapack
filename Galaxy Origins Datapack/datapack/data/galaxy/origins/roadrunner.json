@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"galaxy:fast",
+		"galaxy:gottago",
+		"galaxy:noslow",
+		"galaxy:hunger",
+		"galaxy:low",
+		"galaxy:noswim",
+		"galaxy:whiplash"
+	],
+	"icon": "minecraft:dead_bush",
+	"order": 3,
+	"impact": 3,
+	"name": "Road Runner",
+	"description": "Fastest origin out there. Your heritiage of Road Runners allow you to run really, really fast."
+}

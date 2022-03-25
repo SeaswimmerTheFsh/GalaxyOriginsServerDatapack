@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:slow_falling 1 0 true"
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+
+            "type": "origins:ingredient",
+            "ingredient": {
+
+                "item": "minecraft:paper"
+            }
+        }
+    },
+    "name": "Paper Faller",
+    "description": "You are small enough to use paper as a glider."
+}

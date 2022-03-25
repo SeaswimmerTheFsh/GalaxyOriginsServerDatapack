@@ -1,0 +1,21 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": 		{
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:poison",
+            "duration": 140,
+            "amplifier": 1,
+            "is_ambient": false,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "name": "Poison",
+    "description": "Poison your opponent for 7 seconds!",
+    "cooldown": 300,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar:render": 17
+    }
+}

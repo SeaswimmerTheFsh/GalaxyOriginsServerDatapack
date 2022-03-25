@@ -1,0 +1,27 @@
+{
+  "name": "Still Fast",
+  "description": "You are too fast to be slowed, soul sand doesn't slow you down, and the slowness effect doesn't work on you",
+  "type": "origins:multiple",
+  "slowimm": {
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:slowness"
+    ]
+  },
+  "soulsand": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_total",
+            "value": 0.8
+        },
+    "tick_rate": 10,
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:soul_sand"
+        }
+    }  
+  }
+}

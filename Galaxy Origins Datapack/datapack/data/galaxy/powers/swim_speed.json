@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "value": 1.5,
+        "operation": "multiply_base"
+    },
+    "name": "Swim Speed",
+    "description": "Due to your merling heritage, you swim faster than normal humans."
+}

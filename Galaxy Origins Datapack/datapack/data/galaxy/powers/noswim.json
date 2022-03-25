@@ -1,0 +1,5 @@
+{
+    "type": "origins:ignore_water",
+    "name" : "Not Made for That",
+    "description" : "Try to ignore water, you can't swim."
+  }

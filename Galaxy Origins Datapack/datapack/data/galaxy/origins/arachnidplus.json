@@ -1,0 +1,18 @@
+{
+    "name": "Arachnid",
+    "description": "Their ability to climb walls and trap enemies in cobwebs make the Arachnids the perfect hunters.",
+    "powers": [
+        "galaxy:octadic",
+        "galaxy:climbing",
+        "galaxy:no_suffocation",
+        "galaxy:eyes",
+        "galaxy:break_speed",
+        "origins:carnivore",
+        "origins:arthropod",
+        "origins:master_of_webs"
+    ],
+    "icon": {
+        "item": "minecraft:cobweb"
+    },
+    "impact": 0
+}

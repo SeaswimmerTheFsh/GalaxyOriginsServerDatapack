@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"galaxy:pounce",
+		"galaxy:claws",
+		"galaxy:swim_speed",
+		"galaxy:conduit",
+		"galaxy:feline_agility",
+		"origins:carnivore",
+		"origins:nine_lives",
+		"origins:scare_creepers",
+		"galaxy:night_vision",
+		"galaxy:the_old_way",
+		"origins:fall_immunity",
+		"galaxy:small",
+		"origins:aqua_affinity",
+		"galaxy:water_vision",
+		"galaxy:cannibalism"
+	],
+	"icon": "minecraft:cod",
+	"order": 0,
+	"impact": 2,
+	"name": "Felinish",
+	"description": "The Felinish are an ancient race of cat-fish hybrids that went extinct thousands of years prior. Using advanced genetic technology and ancient texts, we believe we have uncovered their powers."
+}

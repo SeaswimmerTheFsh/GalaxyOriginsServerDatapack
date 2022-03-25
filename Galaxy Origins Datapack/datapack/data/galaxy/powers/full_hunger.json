@@ -1,0 +1,29 @@
+{
+	"type": "origins:stacking_status_effect",
+	"min_stacks": 0,
+	"max_stacks": 3,
+	"duration_per_stack": 10,
+	"effects": [
+		{
+			"effect": "minecraft:speed",
+			"is_ambient": false,
+			"show_particles": false,
+			"show_icon": false,
+			"amplifier": 3
+		},
+		{
+			"effect": "minecraft:jump_boost",
+			"is_ambient": false,
+			"show_particles": false,
+			"show_icon": false,
+			"amplifier": 3
+		}
+	],
+	"condition": {
+		"type": "origins:food_level",
+		"comparison": "==",
+		"compare_to": 20
+	},
+	"name": "Full Hunger",
+  	"description": "You gain Speed IV and Jump Boost IV when you have full hunger."
+}
