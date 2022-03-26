@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "order": 11,
+    "enabled": true,
+    "origins": [
+      "origins-classes:blacksmith",
+      "origins-classes:cleric",
+      "origins-classes:cook",
+      "origins-classes:farmer",
+      "origins-classes:merchant",
+      "origins-classes:rancher",
+      "origins-classes:miner",
+      "origins-classes:rogue",
+      "origins-classes:warrior",
+      "origins-classes:archer",
+      "origins-classes:beastmaster",
+      "origins-classes:lumberjack",
+      "origins-classes:explorer"
+    ]
+  }
