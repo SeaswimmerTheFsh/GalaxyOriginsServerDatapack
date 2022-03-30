@@ -1,6 +1,6 @@
 {
 	"name": "Need for Warmth",
-	"description": "You need to find a heat source or you will freeze. Cold biomes and nighttimes are deadly unless you wear a leather chestplate.",
+	"description": "You need to find a heat source or you will freeze. Cold biomes and nighttimes are deadly unless you wear a chestplate.",
 	"type": "origins:freeze",
 	"condition": {
 		"type": "origins:and",
@@ -17,9 +17,26 @@
 								"equipment_slot": "chest",
 								"item_condition": {
 									"type": "origins:ingredient",
-									"ingredient": {
-										"item": "minecraft:leather_chestplate"
-									},
+									"ingredient": [
+										{
+											"item": "minecraft:leather_chestplate"
+										},
+										{
+											"item": "minecraft:chainmail_chestplate"
+										},
+										{
+											"item": "minecraft:gold_chestplate"
+										},
+										{
+											"item": "minecraft:iron_chestplate"
+										},
+										{
+											"item": "minecraft:diamond_chestplate"
+										},
+										{
+											"item": "minecraft:netherite_chestplate"
+										}
+									],
 									"inverted": true
 								}
 							}
@@ -41,9 +58,29 @@
 								"equipment_slot": "chest",
 								"item_condition": {
 									"type": "origins:ingredient",
-									"ingredient": {
-										"item": "minecraft:leather_chestplate"
-									},
+									"ingredient": [
+										{
+											"item": "minecraft:leather_chestplate"
+										},
+										{
+											"item": "minecraft:chainmail_chestplate"
+										},
+										{
+											"item": "minecraft:gold_chestplate"
+										},
+										{
+											"item": "minecraft:iron_chestplate"
+										},
+										{
+											"item": "minecraft:diamond_chestplate"
+										},
+										{
+											"item": "minecraft:netherite_chestplate"
+										},
+										{
+											"item": "minecraft:elytra"
+										}
+								],
 									"inverted": true
 								}
 							}
