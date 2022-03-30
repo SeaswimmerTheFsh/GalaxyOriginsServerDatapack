@@ -1,0 +1,18 @@
+{
+	"powers": [
+        "origins:nether_spawn",
+        "galaxy:hog_rida",
+        "galaxy:irritable",
+        "galaxy:dalthog_nv",
+		"galaxy:haste",
+		"origins:fire_immunity",
+		"galaxy:speed",
+		"origins:carnivore",
+		""
+    ],
+	"icon": "minecraft:dead_bush",
+	"order": 3,
+	"impact": 3,
+	"name": "Dalthog",
+	"description": "Funny Workhorse Origin that centers around being helpful with more mundane tasks than actual combat, while still bringing a few unique traits to the table."
+}

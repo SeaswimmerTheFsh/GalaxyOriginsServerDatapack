@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:haste",
+            "amplifier": 1,
+            "duration": 4,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "interval": 1,
+    "name": "Hard-Worker",
+    "description": "Your build allows you to mine faster than most."
+}
